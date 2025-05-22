@@ -14,7 +14,8 @@
     "prepare": "husky",
     "typecheck": "tsc --noEmit",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "changelog:first": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog:first": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "analyze": "ANALYZE=true next build"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.3.2",
     "@playwright/test": "^1.52.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
