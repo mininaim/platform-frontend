@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -22,22 +23,23 @@ export default function Home() {
           إلى الثقافة والسياسة والسينما.
         </p>
         <div className="mt-8 w-full flex justify-center">
-          <button
+          <Button
+            size="lg"
             className="
-              rounded-full px-8 py-4 text-base font-bold
-              bg-black text-white
-              dark:bg-white dark:text-black
-              shadow-md
-              hover:bg-zinc-800 dark:hover:bg-zinc-100
-              transition-transform transform hover:scale-105 active:scale-95
-              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-400
-              select-none cursor-pointer
-              flex items-center gap-2
-            "
+            rounded-full px-8 py-4 text-base font-bold
+            bg-black text-white
+            dark:bg-white dark:text-black
+            shadow-md
+            hover:bg-zinc-800 dark:hover:bg-zinc-100
+            transition-transform transform hover:scale-105 active:scale-95
+            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-400
+            select-none cursor-pointer
+            flex items-center gap-2
+          "
           >
-            <Globe size={18} className="text-white dark:text-black" />
+            <Globe size={18} />
             تصفح الآن
-          </button>
+          </Button>
         </div>
       </div>
     </div>
