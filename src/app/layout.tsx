@@ -11,6 +11,9 @@ const notoSansArabic = Noto_Sans_Arabic({
 export const metadata: Metadata = {
   title: "منصة ثمانية",
   description: "منصة رقمية عربية تقدّم محتوى معرفي وألعاب تفاعلية بجودة عالية لجمهور واسع.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
