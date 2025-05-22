@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 
+// testing a comment for Husky
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground font-sans px-4">
