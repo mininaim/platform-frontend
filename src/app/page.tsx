@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
+import { Globe } from 'lucide-react';
 
-// testing a comment for Husky
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground font-sans px-4">
@@ -12,24 +12,30 @@ export default function Home() {
           width={180}
           height={38}
           priority
-          className="mb-8 dark:invert"
+          className="mb-8"
         />
+        <p className="text-2xl text-gray-700 text-center mb-3">
+          هنا تجد أفضل محتوى عربي على الإنترنت.
+        </p>
         <p className="text-lg font-medium text-center max-w-xl leading-relaxed">
-          منصة رقمية عربية تقدّم محتوى معرفي وألعاب تفاعلية بجودة عالية لجمهور واسع.
+          نقدّم البودكاست والوثائقيات ونكتب نشرات بريدية تصل يوميا إلى مئات الألوف. من أسلوب الحياة
+          إلى الثقافة والسياسة والسينما.
         </p>
         <div className="mt-8 w-full flex justify-center">
           <button
             className="
-              rounded-full px-8 py-4 text-xl font-bold
-              bg-black text-white dark:bg-white dark:text-black
+              rounded-full px-8 py-4 text-base font-bold
+              bg-black text-white
               shadow-md
-              hover:bg-zinc-800 dark:hover:bg-zinc-100
+              hover:bg-zinc-800
               transition-transform transform hover:scale-105 active:scale-95
               focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-400
               select-none cursor-pointer
+              flex items-center gap-2
             "
           >
-            إبدأ الآن
+            <Globe size={18} />
+            تصفح الآن
           </button>
         </div>
       </div>
