@@ -2,6 +2,8 @@
 
 Frontend for the app, built with Next.js, TypeScript, and Tailwind CSS .. and more.
 
+![Platform Frontend Screenshot](/public/assets/home-sample.png)
+
 ## Tech Stack (to be updated)
 
 - **Framework**: Next.js 15 with App Router
