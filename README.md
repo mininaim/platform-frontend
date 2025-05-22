@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Platform Frontend
+
+Frontend for the app, built with Next.js, TypeScript, and Tailwind CSS .. and more.
+
+## Tech Stack (to be updated)
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS, class-variance-authority, tailwind-merge
+- **State Management**: Zustand
+- **Testing**: Playwright
+- **Icons & UI**: Lucide React, clsx
+- **Linting**: ESLint, Prettier
+- **Security**: Content Security Policy, HTTP security headers
+- **Tools**: Bundle Analyzer, Conventional Changelog
+- **Git Hooks**: Husky, lint-staged
 
 ## Getting Started
 
-First, run the development server:
+### Requirements
+
+- Node.js 18.17.0 or later
+- pnpm 8.0.0 or later
+
+### Installation
+
+1. clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <https://github.com/Thmanyah-LLC/platform-frontend>
+cd platform-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Set up environment variables:
 
-## Learn More
+```bash
+cp .env.example .env.local
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## Commands
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Command            | description                    |
+| ------------------ | ------------------------------ |
+| `pnpm dev`         | start the development server   |
+| `pnpm build`       | build for production           |
+| `pnpm start`       | run the production server      |
+| `pnpm lint`        | check code with eslint         |
+| `pnpm format`      | format code with prettier      |
+| `pnpm typecheck`   | check types with typescript    |
+| `pnpm test`        | run playwright tests           |
+| `pnpm test:ui`     | run tests in playwright ui     |
+| `pnpm test:headed` | run tests with browser visible |
+| `pnpm analyze`     | analyze bundle size            |
+| `pnpm changelog`   | update changelog from commits  |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Workflow
+
+1. create a branch for your feature or fix
+2. use conventional commit messages
+3. run tests and lint before committing
+4. open a pull request
+5. update `changelog.md` before releases
+
+## Contributing
+
+see [contributing.md](contributing.md) for details on:
+
+- commit message guidelines
+- pull request steps
+- code style
+- testing
